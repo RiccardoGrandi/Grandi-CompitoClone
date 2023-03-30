@@ -1,0 +1,30 @@
+    6  clear
+    7  git log
+    8  git branch
+    9  code .
+   10  clear
+   11  git log --graph --oneline
+   12  cd Desktop/
+   13  git clone https://github.com/sena-meucci/progettoStampa.git
+   14  ls *
+   15  cd progettoStampa/
+   16  code .
+   17  git config user.name "RiccardoGrandi"
+   18  git config user.email "grandi.riccardo@itismeucci.com"
+   19  git commit -a -m "inserito nome"
+   20  git log --graph --oneline
+   21  git log
+   22  git branch BugFix
+   23  git checkout BugFix 
+   24  code .
+   25  git branch
+   26  git commit -a -m "errore risolto in stampa"
+   27  git log --graph --oneline
+   28  git merge BugFix 
+   29  git checkout master
+   30  git merge BugFix 
+   31  git log --graph --oneline
+   32  git branch -d BugFix 
+   33  git log --graph --oneline
+   34  hystory 30 > comandi.txt
+   35  history 30 > comandi.txt
